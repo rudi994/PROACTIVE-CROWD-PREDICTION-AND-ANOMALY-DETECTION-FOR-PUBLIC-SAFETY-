@@ -1,0 +1,95 @@
+{
+  "anomaly_threshold": 60,
+  "critical_threshold": 75,
+  "rolling_window": 30,
+  "prediction_horizon": 600,
+  "train_ratio": 0.8,
+  "sequence_length": 30,
+  "best_model": "Ridge Regression",
+  "feature_columns": [
+    "Social Distance Violations",
+    "Restricted Entry",
+    "Abnormal Activity",
+    "roll_mean",
+    "roll_std",
+    "roll_max",
+    "roll_min",
+    "velocity",
+    "roll_mean_5",
+    "roll_std_5",
+    "roll_max_5",
+    "roll_min_5",
+    "roll_mean_15",
+    "roll_std_15",
+    "roll_max_15",
+    "roll_min_15",
+    "roll_mean_30",
+    "roll_std_30",
+    "roll_max_30",
+    "roll_min_30",
+    "roll_mean_60",
+    "roll_std_60",
+    "roll_max_60",
+    "roll_min_60",
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_5",
+    "lag_10",
+    "lag_15",
+    "lag_30",
+    "ema_10",
+    "ema_30",
+    "ema_60",
+    "acceleration",
+    "momentum_5",
+    "momentum_15",
+    "z_score",
+    "pct_change",
+    "time_of_day_min",
+    "sin_time",
+    "cos_time"
+  ],
+  "global_mean": 48.43,
+  "global_std": 16.21,
+  "data_start": "2026-03-31 14:39:53",
+  "data_end": "2026-03-31 15:25:15",
+  "total_frames": 2723,
+  "model_performance": {
+    "Ridge Regression": {
+      "MAE": 0.03350412093444211,
+      "RMSE": 0.042948064683147706,
+      "R2": 0.9999914901209525
+    },
+    "Random Forest": {
+      "MAE": 0.11196048383319024,
+      "RMSE": 0.44686553140178714,
+      "R2": 0.9990787236885394
+    },
+    "Gradient Boost": {
+      "MAE": 0.04433148138918419,
+      "RMSE": 0.2427445128242199,
+      "R2": 0.9997281464343952
+    },
+    "Ensemble (WA)": {
+      "MAE": 0.0387095135068657,
+      "RMSE": 0.076127246233682,
+      "R2": 0.9999732627688354
+    },
+    "ARIMA": {
+      "MAE": 15.379393595734868,
+      "RMSE": 17.039476481390057,
+      "R2": -0.3395184051367517
+    },
+    "Holt-Winters": {
+      "MAE": 11.267138731841774,
+      "RMSE": 14.84203898938009,
+      "R2": -0.016303278642304075
+    },
+    "LSTM-proxy": {
+      "MAE": 1.1202219493631482,
+      "RMSE": 1.4662684510681419,
+      "R2": 0.9900848355974166
+    }
+  }
+}

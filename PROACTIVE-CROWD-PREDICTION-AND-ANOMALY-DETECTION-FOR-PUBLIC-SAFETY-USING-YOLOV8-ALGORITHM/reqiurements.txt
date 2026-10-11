@@ -1,0 +1,6 @@
+
+pip install ultralytics==8.2.0
+pip install opencv-python==4.9.0.80
+pip install numpy==1.23.5
+pip install torch torchvision torchaudio
+pip install pandas
